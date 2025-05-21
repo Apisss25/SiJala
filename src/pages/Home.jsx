@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../section/HeroSection";
 import Features from "../section/Features";
 import Superiority from "../section/superiority";
+import EducationAnimation from "../section/EducationAnimation";
 
 const Home = () => {
   return (
@@ -19,6 +20,9 @@ const Home = () => {
       {/* Superiority - auto height with padding */}
       <section className="py-16 bg-[#EFEEEA]">
         <Superiority />
+      </section>
+      <section className="py-10 bg-[#EFEEEA]">
+        <EducationAnimation />
       </section>
     </>
   );

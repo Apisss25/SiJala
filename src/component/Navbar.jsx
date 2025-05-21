@@ -193,7 +193,7 @@ export default function Navbar() {
       {/* Mobile Menu Panel */}
       <div
         ref={menuRef}
-        className={`fixed top-0 right-0 w-[70%] h-screen bg-transparent backdrop-blur-md border-l border-gray-200 transform transition-transform duration-300 ease-in-out z-50 ${
+        className={`fixed top-0 right-0 w-[70%] h-screen bg-gray-100 shadow-md border-l border-gray-200 transform transition-transform duration-300 ease-in-out z-50 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -250,9 +250,9 @@ export default function Navbar() {
             <Link
               to="/TrafficSigns"
               onClick={closeAll}
-              className="flex justify-center items-center gap-3"
+              className="flex items-center gap-3"
             >
-              <FontAwesomeIcon icon={faTrafficLight} className="text-[14px]" />
+              <FontAwesomeIcon icon={faTrafficLight} className="text-xl" />
               Rambu Lalu Lintas
             </Link>
           </li>
