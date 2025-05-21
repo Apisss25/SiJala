@@ -12,6 +12,8 @@ import {
   faBars,
   faX,
   faTrafficLight,
+  faQuestionCircle,
+  faClipboardList,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -257,7 +259,12 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/Quiz" onClick={closeAll}>
+            <Link
+              to="/Quiz"
+              onClick={closeAll}
+              className="flex items-center gap-3"
+            >
+              <FontAwesomeIcon icon={faClipboardList} className="text-xl" />
               Quiz
             </Link>
           </li>
